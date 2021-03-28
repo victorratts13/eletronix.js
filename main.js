@@ -6,7 +6,14 @@ const prepareNext = require('electron-next');
 const isDev = require('electron-is-dev')
 //const path = require('path')
 /*****init your code******/
-console.log(localPort)
+/* 
+  delete this part 
+  of the code 
+  and insert your 
+  codes from that point.
+
+*/
+
 /*****end your code******/
 function createWindow() {
   const mainWindow = new BrowserWindow({
