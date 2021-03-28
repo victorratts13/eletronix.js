@@ -6,6 +6,7 @@ const prepareNext = require('electron-next');
 const isDev = require('electron-is-dev')
 //const path = require('path')
 /*****init your code******/
+
 /* 
   delete this part 
   of the code 
