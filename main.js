@@ -1,5 +1,5 @@
 // Modules to control application life and create native browser window
-require('dotenv')
+require('dotenv').config()
 const localPort = process.env.PORT || 8000
 const { app, BrowserWindow } = require('electron')
 const prepareNext = require('electron-next');
@@ -26,7 +26,7 @@ function createWindow() {
       "devTools": true //devtools of chrome
     }
   })
-  mainWindow.setMenuBarVisibility({"topBar": false}); //top bar of chrome
+  mainWindow.setMenuBarVisibility({ "topBar": false }); //top bar of chrome
   const devPath = `http://localhost:${localPort}/`
   const entry = isDev ? devPath : __dirname + '/renderer/out/index.html'
   console.log(entry)
@@ -37,4 +37,5 @@ function createWindow() {
 app.on('ready', async () => {
   await prepareNext(__dirname + '/renderer')
   createWindow()
+  console.log('create window')
 })

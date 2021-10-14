@@ -1,6 +1,6 @@
 {
   "name": "eletronix",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "electron with next quick start",
   "main": "main.js",
   "scripts": {
@@ -19,19 +19,24 @@
     "eletrix"
   ],
   "author": "ratts13",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/victorratts13/eletronix.js/issues"
   },
   "homepage": "https://github.com/victorratts13/eletronix.js#readme",
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "electron": "^12.0.2",
+    "@types/node": "^16.10.9",
+    "@types/react": "^17.0.30",
+    "dotenv": "^8.6.0",
+    "electron": "^12.2.2",
     "electron-is-dev": "^2.0.0",
     "electron-next": "^3.1.5",
-    "next": "^10.0.9",
+    "next": "^11.1.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "ts-node": "^10.3.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
   },
   "build": {
     "files": [
