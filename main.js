@@ -18,15 +18,15 @@ const isDev = require('electron-is-dev')
 /*****end your code******/
 function createWindow() {
   const mainWindow = new BrowserWindow({
-    "width": 1024,
-    "height": 720,
+    "width": 550,
+    "height": 640,
     "webPreferences": {
       //"preload": path.join(__dirname, 'preload.js'),
       "nodeIntegration": false,
       "devTools": true //devtools of chrome
     }
   })
-  mainWindow.setMenuBarVisibility({ "topBar": false }); //top bar of chrome
+  mainWindow.setMenuBarVisibility(false); //top bar of chrome
   const devPath = `http://localhost:${localPort}/`
   const entry = isDev ? devPath : __dirname + '/renderer/out/index.html'
   console.log(entry)
