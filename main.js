@@ -1,9 +1,17 @@
 // Modules to control application life and create native browser window
-require('dotenv').config()
-const localPort = process.env.PORT || 8000
-const { app, BrowserWindow } = require('electron')
+// import dotenv from 'dotenv';
+// import { app, BrowserWindow } from 'electron';
+// import prepareNext from 'electron-next';
+// import isDev from 'electron-is-dev';
+
+const dotenv = require('dotenv');
+const { app, BrowserWindow } = require('electron');
 const prepareNext = require('electron-next');
-const isDev = require('electron-is-dev')
+const isDev = require('electron-is-dev');
+
+dotenv.config();
+const localPort = process.env.PORT || 8000;
+
 //const path = require('path')
 /*****init your code******/
 
