@@ -28,7 +28,7 @@
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
     "dotenv": "^16.0.3",
-    "electron": "^21.2.3",
+    "electron": "^23.1.2",
     "electron-is-dev": "^2.0.0",
     "electron-next": "^3.1.5",
     "next": "^13.0.3",
